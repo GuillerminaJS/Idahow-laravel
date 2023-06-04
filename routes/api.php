@@ -21,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/commands', 'App\Http\Controllers\CommandController@index');
 Route::post('/commands', 'App\Http\Controllers\CommandController@store');
 Route::get('/commands/{command}', 'App\Http\Controllers\CommandController@show');
-Route::put('/command', 'App\Http\Controllers\CommandController@update');
+Route::put('/commands/update', 'App\Http\Controllers\CommandController@update');
 Route::delete('/commands/{command}', 'App\Http\Controllers\CommandController@destroy');
